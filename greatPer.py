@@ -21,9 +21,33 @@
 #
 #
 #multiplicant = int(input("Kindly enter digit for print Pyramid: "))
-multiplier = int(input("Please enter digit for print Table: "))
+# multiplier = int(input("Please enter digit for print Table: "))
+#
+# for i in range (1 , 11):
+#      a = multiplier * i
+#
+#      print(multiplier, "x", i, "=", a)
 
+#Marks = int(input("Please enter digit for print Table: "))
+#
+# with open("sample.txt", 'r') as my_file:
+#     content = my_file.read()    # read() returns the content of file
+#     #print("Reading file: ")
+#     print(content)
+
+
+f = open("sample.txt", "w")
+#a = ["Hamza","CSE",24]
+#multiplier = int(input("Please enter digit for print Table: "))
+f = open("sample.txt", "w")
+multiplier = 3
+table= []
 for i in range (1 , 11):
-     a = multiplier * i
+     z = multiplier, "x", i, "=", multiplier * i
+     table.append(z)
 
-     print(multiplier, "x", i, "=", a)
+f.write(str(table))
+f.close()
+
+f = open("sample.txt", "r")
+f.read()
